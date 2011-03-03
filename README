@@ -1,0 +1,20 @@
+WARNING - Flashing the primary boot loader incorrectly can "hard-brick" your device.
+WARNING - Flashing the secondary boot loader incorrectly can "soft-brick" your device.
+WARNING - These files are provided as-is with no warranty. I take no responsibility for what you do with it, what happens to you or your device because of these files. You've been warned.
+WARNING - You must own a GT-I9000 in order to use or download these files.
+
+Instructions for the secondary boot loader (you usually don't need to upgrade the primary, and it's dangerous):
+
+With heimdall (in download mode):
+
+# heimdall flash --secondary-boot-backup Sbl.bin
+
+With odin (in download mode):
+
+- Select Sbl.bin.tar
+- Check Phone Bootloader Update
+- Click start
+
+The XWJM2 version is currently recommended for CM7.
+
+For your safety, the primary boot loader is not provided as tar - if you can tar it properly, maybe you actually know what you're doing, even if the chance is still slim... :P
